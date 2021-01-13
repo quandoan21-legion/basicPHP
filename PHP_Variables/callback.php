@@ -8,31 +8,31 @@
     // Kiểu dữ liệu của biến lúc trả về sẽ không bị thay đổi 
     echo "Array_filter()". '<br> <br>';
     function findingPvtsRyan($var) {
-        return($var['name'] == "Ryan" && $var['rank'] == "Pvts" );
+        return($var['name']  =  =  "Ryan" && $var['rank']  =  =  "Pvts" );
     }
 
-    $aSavingPvtsRyan=[
+    $aSavingPvtsRyan = [
 
-        ["rank"=>"Sgts",
-         "name"=>"Ryan"],
+        ["rank" => "Sgts",
+         "name" => "Ryan"],
 
-        ["rank"=>"Pvts",
-         "name"=>"Doug"],
+        ["rank" => "Pvts",
+         "name" => "Doug"],
 
-        ["rank"=>"Lts",
-         "name"=>"Dan"],
+        ["rank" => "Lts",
+         "name" => "Dan"],
 
-        ["rank"=>"Cpt",
-         "name"=>"Price"],
+        ["rank" => "Cpt",
+         "name" => "Price"],
 
-        ["rank"=>"Sgts",
-         "name"=>"Soap"],
+        ["rank" => "Sgts",
+         "name" => "Soap"],
 
-        ["rank"=>"Sgts",
-         "name"=>"Gaz"],
+        ["rank" => "Sgts",
+         "name" => "Gaz"],
 
-        ["rank"=>"Pvts",
-         "name"=>"Ryan"]
+        ["rank" => "Pvts",
+         "name" => "Ryan"]
 
        
     ];
@@ -51,33 +51,33 @@ echo "  " . '<br> <br>';
     echo "Array_map()". '<br> <br>';
 
     function combatReport($var){
-        $reponse="";
+        $reponse = "";
         // đoạn switch case này em không tìm được cách làm cho nó gọn hơn được  anh có thể hỗ trợ em được không  ?
         switch ($var['rank']) {                     
             case "Pvts":
                 switch ($var['name']) {
                     case "Jackson":
-                       $reponse="{$var['rank']} {$var['name']}. Status: Killed In Action";
+                       $reponse = "{$var['rank']} {$var['name']}. Status: Killed In Action";
                     break;
 
                     case "Mellish":
-                       $reponse="{$var['rank']} {$var['name']}. Status: Killed In Action";
+                       $reponse = "{$var['rank']} {$var['name']}. Status: Killed In Action";
                     break;
 
                     case "Caparzo":
-                       $reponse="{$var['rank']} {$var['name']}. Status: Killed In Action";
+                       $reponse = "{$var['rank']} {$var['name']}. Status: Killed In Action";
                     break;
 
                     case "Parker":
-                       $reponse="{$var['rank']} {$var['name']}. Status: Killed In Action";
+                       $reponse = "{$var['rank']} {$var['name']}. Status: Killed In Action";
                     break;
 
                     case "Reiben":
-                       $reponse="{$var['rank']} {$var['name']}. Status: Unknown";
+                       $reponse = "{$var['rank']} {$var['name']}. Status: Unknown";
                     break;
 
                     case "Ryan":
-                       $reponse="{$var['rank']} {$var['name']}. Status: Survive";
+                       $reponse = "{$var['rank']} {$var['name']}. Status: Survive";
                     break;
 
                 }                
@@ -86,7 +86,7 @@ echo "  " . '<br> <br>';
             case "PFC":
                 switch ($var['name']) {
                     case "Toynbe":
-                       $reponse="{$var['rank']} {$var['name']}. Status: Killed In Action";
+                       $reponse = "{$var['rank']} {$var['name']}. Status: Killed In Action";
                     break;
                 }                
                 break;
@@ -94,7 +94,7 @@ echo "  " . '<br> <br>';
             case "Medic":
                 switch ($var['name']) {
                     case "Wade":
-                       $reponse="{$var['rank']} {$var['name']}. Status: Killed In Action";
+                       $reponse = "{$var['rank']} {$var['name']}. Status: Killed In Action";
                     break;
 
                 }                
@@ -103,11 +103,11 @@ echo "  " . '<br> <br>';
             case "Cpl":
                 switch ($var['name']) {
                     case "Henderson":
-                       $reponse="{$var['rank']} {$var['name']}. Status: Killed In Action";
+                       $reponse = "{$var['rank']} {$var['name']}. Status: Killed In Action";
                     break;
 
                     case "Upham":
-                       $reponse="{$var['rank']} {$var['name']}. Status: Unknown";
+                       $reponse = "{$var['rank']} {$var['name']}. Status: Unknown";
                     break;
                 }                
                 break;
@@ -115,11 +115,11 @@ echo "  " . '<br> <br>';
             case "Sgts":
                 switch ($var['name']) {
                     case "Horvath":
-                       $reponse="{$var['rank']} {$var['name']}. Status: Killed In Action";
+                       $reponse = "{$var['rank']} {$var['name']}. Status: Killed In Action";
                     break;
 
                     case "Hill":
-                       $reponse="{$var['rank']} {$var['name']}. Status: Unknown";
+                       $reponse = "{$var['rank']} {$var['name']}. Status: Unknown";
                     break;
                 }                
                 break;
@@ -128,7 +128,7 @@ echo "  " . '<br> <br>';
             case "Lts":
                 switch ($var['name']) {
                     case "Anderson":
-                       $reponse="{$var['rank']} {$var['name']}. Status: Unknown";
+                       $reponse = "{$var['rank']} {$var['name']}. Status: Unknown";
                     break;
                 }                
                 break;
@@ -136,11 +136,11 @@ echo "  " . '<br> <br>';
             case "Cpts":
                 switch ($var['name']) {                    
                     case "Miller":
-                       $reponse="{$var['rank']} {$var['name']}. Status: Killed In Action";
+                       $reponse = "{$var['rank']} {$var['name']}. Status: Killed In Action";
                         break;
 
                     case "Hamill":
-                       $reponse="{$var['rank']} {$var['name']}. Status: Unknown";
+                       $reponse = "{$var['rank']} {$var['name']}. Status: Unknown";
                         break;
                 }                
                 break;   
@@ -149,52 +149,52 @@ echo "  " . '<br> <br>';
        
     }
 
-    $aPersonelReport=[
+    $aPersonelReport = [
         
-        ["rank"=>"Cpts",
-         "name"=>"Miller"],
+        ["rank" => "Cpts",
+         "name" => "Miller"],
 
-        ["rank"=>"Sgts",
-         "name"=>"Horvath"],
+        ["rank" => "Sgts",
+         "name" => "Horvath"],
 
-        ["rank"=>"Pvts",
-         "name"=>"Reiben"],
+        ["rank" => "Pvts",
+         "name" => "Reiben"],
 
-        ["rank"=>"Pvts",
-         "name"=>"Parker"],
+        ["rank" => "Pvts",
+         "name" => "Parker"],
 
-        ["rank"=>"Pvts",
-         "name"=>"Jackson"],
+        ["rank" => "Pvts",
+         "name" => "Jackson"],
 
-        ["rank"=>"Pvts",
-         "name"=>"Mellish"],
+        ["rank" => "Pvts",
+         "name" => "Mellish"],
 
-        ["rank"=>"Pvts",
-         "name"=>"Caparzo"],
+        ["rank" => "Pvts",
+         "name" => "Caparzo"],
 
-        ["rank"=>"Medic",
-         "name"=>"Wade"],
+        ["rank" => "Medic",
+         "name" => "Wade"],
 
-        ["rank"=>"Cpl",
-         "name"=>"Upham"],
+        ["rank" => "Cpl",
+         "name" => "Upham"],
 
-        ["rank"=>"Pvts",
-         "name"=>"Ryan"],
+        ["rank" => "Pvts",
+         "name" => "Ryan"],
 
-        ["rank"=>"Cpts",
-         "name"=>"Hamill"],
+        ["rank" => "Cpts",
+         "name" => "Hamill"],
 
-        ["rank"=>"PFC",
-         "name"=>"Toynbe"],
+        ["rank" => "PFC",
+         "name" => "Toynbe"],
 
-        ["rank"=>"Sgts",
-         "name"=>"Hill"],
+        ["rank" => "Sgts",
+         "name" => "Hill"],
 
-        ["rank"=>"Lts",
-         "name"=>"Anderson"],
+        ["rank" => "Lts",
+         "name" => "Anderson"],
 
-        ["rank"=>"Cpl",
-         "name"=>"Henderson"]
+        ["rank" => "Cpl",
+         "name" => "Henderson"]
     ];
     
 
@@ -221,7 +221,7 @@ echo "  " . '<br> <br>';
     $aReduceValues = array_reduce($aPersonelReport,'myReduceFunction', []);
     echo '<pre';
     var_dump($aReduceValues);
-    echo '</pre>';
+    echo '</pre>' . '<br> <br>';
 
 
 /* -------------------------------------------------------------------------- */
@@ -234,7 +234,7 @@ echo "  " . '<br> <br>';
 
     // function explore được dùng để biến từng từ trong 1 đoạn dữ liệu string thành dữ liệu trong mảng 
     echo "explode function". '<br> <br>';
-    $str="Saving Private Ryan";
+    $str = "Saving Private Ryan";
     print_r (explode(" ",$str)). '<br> <br>';
      echo " ". '<br> <br>';
 
@@ -247,7 +247,7 @@ echo "  " . '<br> <br>';
 /* -------------------------------------------------------------------------- */
 
     // function implode được dùng để biến các dữ liệu trong mảng thành 1 đoạn dứ liệu string
-    $arr=array('Saving','Private','Ryan');
+    $arr = array('Saving','Private','Ryan');
     echo implode(" ",$arr);
      echo  " ". '<br> <br>';
 /* -------------------------------------------------------------------------- */
