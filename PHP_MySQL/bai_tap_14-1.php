@@ -33,14 +33,12 @@ echo '<hr>';
 //  #5:  Ứng dụng array_search
 $aNumbs = [1, 2, 3, 4, 5, 6];
 $addTwoNumbers = function ($target) use ($aNumbs) {
-    foreach ($aNumbs as $numbs1) {
-        $numbs2 = $target - $numbs1;
-        $aNumbs2 = explode(" ", $numbs2);
-        foreach ($aNumbs2 as $Numbs2) {
-            if (array_search($Numbs2, $aNumbs) != null) {
-                echo array_search($Numbs2, $aNumbs) . ' ' . array_search($numbs1, $aNumbs) . '<br>';
+    for ($i=0; $i < count($aNumbs); $i++) { 
+        for ($j= $i + 1; $j < count($aNumbs); $j++) { 
+             if ($aNumbs[$j] == $target - $aNumbs[$i]) {
+                echo  $i . ',' . $j  . '<br>';
             }
-        }      
+        }
     }
        
 };
