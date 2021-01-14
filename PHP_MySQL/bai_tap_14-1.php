@@ -44,5 +44,15 @@ $addTwoNumbers = function ($target) use ($aNumbs) {
     }
        
 };
-
 $addTwoNumbers('9');
+echo '<hr>';
+
+// #6 Ứng dụng array_map
+function multiply($n)
+{
+    return ($n * $n);
+}
+
+$aNumbers = [1, 2, 3, 4, 5];
+$b = array_map('multiply', $aNumbers);
+var_dump($b);
