@@ -3,6 +3,8 @@
 // function nhận vào tham số optional là function không nhất thiết phải có tham số optinal đó vẫn có thể chạy được bình thường 
 // nên đặt optinal parameter sau required parameter
 
+$a="v";
+
 // #2 Lấy ví dụ về phạm vi của biến.
 $aFirstName = ["Quan", "ly"];
 
