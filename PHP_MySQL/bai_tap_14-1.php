@@ -3,8 +3,6 @@
 // function nhận vào tham số optional là function không nhất thiết phải có tham số optinal đó vẫn có thể chạy được bình thường 
 // nên đặt optinal parameter sau required parameter
 
-$a="v";
-
 // #2 Lấy ví dụ về phạm vi của biến.
 $aFirstName = ["Quan", "ly"];
 
@@ -38,7 +36,9 @@ $addTwoNumbers = function ($target) use ($aNumbs) {
     for ($i=0; $i < count($aNumbs); $i++) { 
         for ($j= $i + 1; $j < count($aNumbs); $j++) { 
              if ($aNumbs[$j] == $target - $aNumbs[$i]) {
-                echo  $i . ',' . $j  . '<br>';
+                $numbs1 = array_search($aNumbs[$i],$aNumbs);
+                $numbs2 = array_search($aNumbs[$j],$aNumbs);
+                echo $numbs1 . ', ' . $numbs2 . '<br>';
             }
         }
     }
