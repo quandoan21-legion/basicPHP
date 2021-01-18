@@ -33,16 +33,21 @@ echo '<hr>';
 //  #5:  Ứng dụng array_search
 $aNumbs = [1, 2, 3, 4, 5, 6];
 $addTwoNumbers = function ($target) use ($aNumbs) {
+    $aResponse = [];
     for ($i=0; $i < count($aNumbs); $i++) { 
-        for ($j= $i + 1; $j < count($aNumbs); $j++) { 
-             if ($aNumbs[$j] == $target - $aNumbs[$i]) {
-                $numbs1 = array_search($aNumbs[$i],$aNumbs);
-                $numbs2 = array_search($aNumbs[$j],$aNumbs);
-                echo $numbs1 . ', ' . $numbs2 . '<br>';
+        $firstValue = $aNumbs[$i];
+        if ($firstValue <= $target) {
+            $secondValue = $target - $firstValue;
+            unset($firstValue);
+
+            $secondValueIndex = array_search($secondValue, $aNumbs);
+
+            if ($secondValueIndex !== false) {
+                return [$i, $secondValueIndex];
             }
         }
     }
-       
+    return $aResponse;  
 };
 $addTwoNumbers('9');
 echo '<hr>';
