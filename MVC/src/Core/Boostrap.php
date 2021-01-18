@@ -1,6 +1,7 @@
 <?php
 require_once "Request.php";
 require_once "Router.php";
+$aRouter = include "configs/router.php";
 
 function loadView($file)
 {
@@ -14,4 +15,4 @@ function loadView($file)
 }
 $route = Request::route();
 $oRoute = new Router();
-$oRoute->direct($route);
+$oRoute->setRouter($aRouter)->direct($route);

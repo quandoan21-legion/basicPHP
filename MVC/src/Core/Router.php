@@ -1,13 +1,13 @@
 <?php
 class Router
 {
-    private $aRouter 
-    = [
-        'home' => 'HomeController@loadIndex',
-        'about' => 'AboutController@loadIndex',
-        'contact' => 'ContactController@loadIndex'
-    ];
-    public function direct($route)
+    private $aRouter ;
+
+    public function setRouter($router) {
+        $this->aRouter = $router;
+        return $this;
+    }
+    public function direct($route) 
     {
         if (isset($this->aRouter[$route])) {
             $currentRoute  = $this->aRouter[$route];
