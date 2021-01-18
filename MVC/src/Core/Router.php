@@ -1,24 +1,24 @@
 <?php
-class Router
+class Route
 {
-    private $aRouter ;
+    private $aRouter;
 
-    public function setRouter($router) {
+    public function setRouter($router)
+    {
         $this->aRouter = $router;
         return $this;
     }
-    public function direct($route) 
+
+    public function direct($route)
     {
         if (isset($this->aRouter[$route])) {
-            $currentRoute  = $this->aRouter[$route];
-
-            $aPasteCurrentRoute = explode("@", $currentRoute);
-            
-            include "src/Controllers/" . $aPasteCurrentRoute[0] .'.php';
-            $oCurrentRoute = new $aPasteCurrentRoute[0];
-            $oCurrentRoute -> {$aPasteCurrentRoute[1]}();
+            $currentRoute = $this->aRouter[$route];
+            $aPasteRoute = explode("@", $currentRoute);
+            include "src/Controllers/".$aPasteRoute[0].".php";
+            $oControllerIndex = new $aPasteRoute[0];
+            $oControllerIndex->{$aPasteRoute[1]}();
         }else {
-            echo "404 not found that route";
+            echo "404 NOT FOUND";
         }
     }
 }

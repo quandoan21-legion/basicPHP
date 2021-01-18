@@ -1,6 +1,7 @@
 <?php
- return [
-    'home' => 'HomeController@loadIndex',
-    'about' => 'AboutController@loadIndex',
-    'contact' => 'ContactController@loadIndex'
+return [
+    "home" => "HomeController@home",
+    "viewHome" => "HomeController@viewHome",
+    "about" => "AboutController@about",
+    "viewAbout" => "AboutController@viewAbout"
 ];

@@ -1,4 +1,4 @@
-<?php 
-include "src/Views/header.php";
-echo "About PAGE";
-include "src/Views/footer.php";
+<?php
+require_once "src/Views/header.php";
+echo "this is about index";
+require_once "src/Views/footer.php";
