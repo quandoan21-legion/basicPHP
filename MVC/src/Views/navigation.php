@@ -1,8 +1,11 @@
 <div>
     <div class="link_route">
-        <a href="?route=home">home</a>
+        <a href="home">home</a>
     </div>
     <div class="link_route">
-        <a href="?route=about">about</a>
+        <a href="about">about</a>
+    </div>
+    <div class="link_route">
+        <a href="login">Login</a>
     </div>
 </div>

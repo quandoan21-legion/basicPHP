@@ -15,5 +15,7 @@ function loadView($file){
 }
 
 $route = Request::route();
+$method = $_SERVER['REQUEST_METHOD'];
+
 $oRouter = new Route();
-$oRouter->setRouter($aRouter)->direct($route);
+$oRouter->setRouter($aRouter)->direct($method, $route);
