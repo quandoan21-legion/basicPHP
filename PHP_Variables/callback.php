@@ -8,7 +8,7 @@
     // Kiểu dữ liệu của biến lúc trả về sẽ không bị thay đổi 
     echo "Array_filter()". '<br> <br>';
     function findingPvtsRyan($var) {
-        return($var['name']  =  =  "Ryan" && $var['rank']  =  =  "Pvts" );
+        return($var['name']  ==  "Ryan" && $var['rank']  ==  "Pvts" );
     }
 
     $aSavingPvtsRyan = [

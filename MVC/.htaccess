@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /php/MVC/
+RewriteBase /php/MVC/index.php/
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.+)$ ./index.php/?route=$1 [L,NC]
+RewriteRule ^(.+)$ ./?route=$1 [L,NC]
